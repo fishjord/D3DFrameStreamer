@@ -1,0 +1,28 @@
+DirectX Streamer is designed to facillitate streaming frames from DirectX 9/10/11 applications over a socket.
+
+The program comes in three parts:
+  1. A utilitiy program to inject the dll in to the directx application
+  2. The injected code (based heavily on spazzarama's Direct3DHook)
+  3. A wrapper around ffmpeg to transcode and stream over tcp
+  
+Right now only directx 9 applications are supported, the other versions just need to have their code updated to use a more efficent screen grab than the slow to-bitmap that was originally used in the Direct3DHook application (d3d9 has surface blt which I'm used to using, also most of the programs I particularly wanted to use this with are d3d9).
+
+The frame server sends raw image data encoded as argb32 over a tcp socket to an end point defined by the injecting application at a maximum specified framerate.
+
+The ffmpeg wrapper is a small python script that can run on the same machine or a seperate machine that handles transcoding (curretly configured to transcode to h264 in an mpeg2 ps).
+
+I am happy to answer questions about the code but it still very much a WIP and not a one-click solution.
+
+Dependencies:
+
+frame server:
+  Visual Studio 2010 to build
+  Direct3DHook (modified code included)
+    EasyHook
+    SlimDX
+
+encoder:
+  python
+  ffmpeg
+    built with x264
+	built with tcp streaming
