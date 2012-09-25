@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AVIStreamCLI", "AVIStreamCLI\AVIStreamCLI.csproj", "{4C5F579F-4827-4FE0-9019-3E3A1BC5431D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D3DFrameStreamer", "AVIStreamCLI\D3DFrameStreamer.csproj", "{4C5F579F-4827-4FE0-9019-3E3A1BC5431D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenshotInject", "..\..\..\GitHub\Direct3DHook\ScreenshotInject\ScreenshotInject.csproj", "{0E19B078-C22D-4C1B-81AA-BF6CA48609E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenshotInject", "..\Direct3DHook\ScreenshotInject\ScreenshotInject.csproj", "{0E19B078-C22D-4C1B-81AA-BF6CA48609E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

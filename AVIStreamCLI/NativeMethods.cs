@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Runtime.InteropServices;
 
-namespace AVIStreamCLI
+namespace D3DFrameStreamer
 {
     [System.Security.SuppressUnmanagedCodeSecurity()]
     internal sealed class NativeMethods

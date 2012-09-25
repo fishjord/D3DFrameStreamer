@@ -15,7 +15,7 @@ using System.IO;
 using System.Drawing;
 using System.Drawing.Imaging;
 
-namespace AVIStreamCLI
+namespace D3DFrameStreamer
 {
     class ScreenCapturer
     {        
